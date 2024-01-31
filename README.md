@@ -1,5 +1,4 @@
-# angularjs-empty-project
-AngularJS Empty project with ui-router and Angular Bootstrap
+# Book Favorite Organization System
 
 ### Prepare project
 ```
