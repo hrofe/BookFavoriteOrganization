@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"
+      ng-app="bkapp"
+      ng-strict-di>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Books Favorite Organizer</title>
+  <meta name="veiwport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+        type="text/css"
+        href="content/app.css" />
+  <link rel="stylesheet"
+        type="text/css"
+        href="content/animate.css" />
+</head>
+
+<body>
+  <app></app>
+
+  <!-- dependencies -->
+  <script type="text/javascript"
+          src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/underscore/underscore.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+  <script type="text/javascript"
+          src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script type="text/javascript"
+          src="controllers/animatedModal/angular-animated-modal.js"></script>
+  <script type="text/javascript"
+          src="controllers/animatedModal/animatedModal.js"></script>
+
+  <!-- bkapp.core -->
+  <script type="text/javascript"
+          src="core/core.module.js"></script>
+  <script type="text/javascript"
+          src="core/core.config.js"></script>
+
+  <!-- bkapp.services -->
+  <script type="text/javascript"
+          src="services/services.module.js"></script>
+  <script type="text/javascript"
+          src="services/bookList.services.js"></script>
+  <script type="text/javascript"
+          src="services/modal.service.js"></script>
+
+  <!-- pfTest.dummy -->
+  <!-- <script type="text/javascript"
+          src="dummy/dummy.module.js"></script>
+  <script type="text/javascript"
+          src="dummy/dummy.routes.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/home/home.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/test/test.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/test-modal/test-modal.component.js"></script>-->
+
+  <!-- Login Page -->
+  <script type="text/javascript"
+          src="controllers/login/login.module.js"></script>
+  <script type="text/javascript"
+          src="controllers/login/login.component.js"></script>
+  <script type="text/javascript"
+          src="controllers/bkapp.module.js"></script>
+  <script type="text/javascript"
+          src="controllers/app.routes.js"></script>
+
+
+  <!-- Book List Page-->
+  <script type="text/javascript"
+          src="controllers/bookList/bookList.module.js"></script>
+  <script type="text/javascript"
+          src="controllers/bookList/bookList.component.js"></script>
+
+
+  <!-- Book Item Page-->
+  <script type="text/javascript"
+          src="controllers/bookItem/bookItem.module.js"></script>
+  <script type="text/javascript"
+          src="controllers/bookItem/bookItem.directive.js"></script>
+  <script type="text/javascript"
+          src="controllers/bookItem/bookItem.component.js"></script>
+
+  <!-- pfTest -->
+  <script type="text/javascript"
+          src="underscoreService.js"></script>
+  <script type="text/javascript"
+          src="app.module.js"></script>
+  <script type="text/javascript"
+          src="app.component.js"></script>
+</body>
+
+</html>

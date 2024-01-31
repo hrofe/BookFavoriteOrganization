@@ -1,0 +1,24 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Login Form -->
+    <form>
+      <input type="text"
+             id="login"
+             class="fadeIn first"
+             name="login"
+             placeholder="login"
+             ng-model=user.UserName>
+      <input type="text"
+             id="password"
+             class="fadeIn second"
+             name="login"
+             placeholder="password"
+             ng-model=user.Password>
+      <input type="submit"
+             class="fadeIn third"
+             value="Log In"
+             ng-click="navigate('bookList')">
+    </form>
+
+  </div>
+</div>

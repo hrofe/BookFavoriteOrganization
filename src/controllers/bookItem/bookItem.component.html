@@ -1,0 +1,94 @@
+<div class="row">
+  <div class="col-xs-12 flexboxContent">
+    <div class="square col-xs-6 padding-2">
+      <div class="">
+        <div class="square-table">
+          <div class="table-cell-top">
+            <div class="textLeft"
+                 style="padding-left: 11px;padding-top: 11px;height: 17px">
+              <img class=""
+                   alt=""
+                   src="/src/Images/pressStar.png"
+                   ng-show="checkIfFavoriteBook(item)" />
+            </div>
+          </div>
+          <div class="table-cell">
+            <div class="textCenter">
+              <!--<img class="image-marginAuto img-responsive" alt="" src="/Images/phoneBook/defaultLogo.png"/>-->
+              <!--<img class="image-marginAuto" alt="" ng-src="{{!phonebook.Favorite ? '/Images/phoneBook/defaultLogo.png' : '/Images/phoneBook/defaultLogo.png'}}"/>-->
+              <img class="image-marginAuto squre-img-responsive"
+                   alt=""
+                   ng-src="{{item.volumeInfo.imageLinks.smallThumbnail}}" />
+            </div>
+          </div>
+          <div class="table-cell-bottom">
+            <div class="textCenter">
+              <span class="phonebookTitle">{{item.volumeInfo.title}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="square-overlay"></div>
+      <div class="square-star">
+        <img class=""
+             alt=""
+             ng-src="{{!checkIfFavoriteBook(item) ? '/src/Images/star.png' : '/src/Images/pressStar.png'}}"
+             ng-click="addToFavorites(item)" />
+      </div>
+      <div class="square-button">
+        <a animated-modal
+           href="#bookAnimatedModal"
+           options="options"
+           before-open="beforeOpen(item)"
+           after-close="afterClose()">
+          <span class="orgTextContent"> Show-More</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!--<div class="row">
+  <div class="col flexboxContent">
+      <div class="square col-xs-2 padding-2"
+           ng-repeat="($index,org) in filteredorgsList | filter:searchOrg |  filter:filterFunction">
+          <div class="content">
+              <div class="square-table">
+                  <div class="table-cell-top">
+                      <div class="textLeft" style="padding-left: 11px;padding-top: 11px;height: 17px">
+                          <img class="" alt="" src="/src/Images/pressStar.png" ng-show="book.Favorite" />
+                      </div>
+                  </div>
+                  <div class="table-cell">
+                      <div class="textCenter">
+                          <img class="image-marginAuto squre-img-responsive" alt="" ng-src="{{$index%2===0 ? '/Images/phoneBook/tempLogo1.png' : '/Images/phoneBook/tempLogo2.png'}}" />
+                      </div>
+                  </div>
+                  <div class="table-cell-bottom">
+                      <div class="textCenter">
+                          <span class="phonebookTitle">{{book.OrgTitle}}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="square-overlay"></div>
+          <div class="square-star">
+              <img class="" alt=""
+                   ng-src="{{!book.Favorite ? '/src/Images/star.png' : '/src/Images/pressStar.png'}}"
+                   ng-click="book.Favorite =!book.Favorite" />
+          </div>
+          <div class="square-button">
+              <a animated-modal href="#orgAnimatedModal"
+                 options="options"
+                 before-open="beforeOpen(book)" after-close="afterClose()">
+                  <span class="orgTextContent"> לחץ לפרטים נוספים</span>
+              </a>
+          </div>
+      </div>
+
+  </div>
+</div>-->
